@@ -10,11 +10,14 @@ defmodule Duuuper.Application do
     children = [
       # Starts a worker by calling: Duuuper.Worker.start_link(arg)
       # {Duuuper.Worker, arg}
+      Duper.Results,
+      {Duper.PathFinder, "."},
+      Duper.WorkerSupervisor
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Duuuper.Supervisor]
+    opts = [strategy: :one_for_all, name: Duuuper.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end
