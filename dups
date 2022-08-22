@@ -1,0 +1,129 @@
+Compiling 1 file (.ex)
+
+16:43:30.807 [error] GenServer #PID<0.208.0> terminating
+** (File.Error) could not read file stats "~": no such file or directory
+    (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+    (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message (from PathFinder): {:get_next, 1}
+State: {["~"], %{include_dir_names: #Function<3.13129602/2 in DirWalker.setup_mappers/1>, include_stat: #Function<1.13129602/2 in DirWalker.setup_mappers/1>, matching: #Function<5.13129602/1 in DirWalker.setup_mappers/1>}}
+Client PathFinder is alive
+
+    (stdlib 4.0.1) gen.erl:256: :gen.do_call/4
+    (elixir 1.13.4) lib/gen_server.ex:1027: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/path_finder.ex:22: Duper.PathFinder.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+
+16:43:30.819 [error] GenServer #PID<0.214.0> terminating
+** (File.Error) could not read file stats "~": no such file or directory
+    (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+    (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message (from PathFinder): {:get_next, 1}
+State: {["~"], %{include_dir_names: #Function<3.13129602/2 in DirWalker.setup_mappers/1>, include_stat: #Function<1.13129602/2 in DirWalker.setup_mappers/1>, matching: #Function<5.13129602/1 in DirWalker.setup_mappers/1>}}
+Client PathFinder is alive
+
+    (stdlib 4.0.1) gen.erl:256: :gen.do_call/4
+    (elixir 1.13.4) lib/gen_server.ex:1027: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/path_finder.ex:22: Duper.PathFinder.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+
+16:43:30.820 [error] GenServer #PID<0.217.0> terminating
+** (stop) exited in: GenServer.call(PathFinder, :next_path, 5000)
+    ** (EXIT) an exception was raised:
+        ** (File.Error) could not read file stats "~": no such file or directory
+            (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+            (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+            (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+            (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+            (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+    (elixir 1.13.4) lib/gen_server.ex:1030: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/worker.ex:14: Duper.Worker.handle_info/2
+    (stdlib 4.0.1) gen_server.erl:1120: :gen_server.try_dispatch/4
+    (stdlib 4.0.1) gen_server.erl:1197: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message: :do_one_file
+State: nil
+
+16:43:30.821 [error] GenServer #PID<0.220.0> terminating
+** (File.Error) could not read file stats "~": no such file or directory
+    (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+    (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message (from PathFinder): {:get_next, 1}
+State: {["~"], %{include_dir_names: #Function<3.13129602/2 in DirWalker.setup_mappers/1>, include_stat: #Function<1.13129602/2 in DirWalker.setup_mappers/1>, matching: #Function<5.13129602/1 in DirWalker.setup_mappers/1>}}
+Client PathFinder is alive
+
+    (stdlib 4.0.1) gen.erl:256: :gen.do_call/4
+    (elixir 1.13.4) lib/gen_server.ex:1027: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/path_finder.ex:22: Duper.PathFinder.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+
+16:43:30.822 [error] GenServer #PID<0.223.0> terminating
+** (stop) exited in: GenServer.call(PathFinder, :next_path, 5000)
+    ** (EXIT) an exception was raised:
+        ** (File.Error) could not read file stats "~": no such file or directory
+            (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+            (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+            (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+            (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+            (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+    (elixir 1.13.4) lib/gen_server.ex:1030: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/worker.ex:14: Duper.Worker.handle_info/2
+    (stdlib 4.0.1) gen_server.erl:1120: :gen_server.try_dispatch/4
+    (stdlib 4.0.1) gen_server.erl:1197: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message: :do_one_file
+State: nil
+
+16:43:30.823 [error] GenServer #PID<0.226.0> terminating
+** (File.Error) could not read file stats "~": no such file or directory
+    (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+    (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message (from PathFinder): {:get_next, 1}
+State: {["~"], %{include_dir_names: #Function<3.13129602/2 in DirWalker.setup_mappers/1>, include_stat: #Function<1.13129602/2 in DirWalker.setup_mappers/1>, matching: #Function<5.13129602/1 in DirWalker.setup_mappers/1>}}
+Client PathFinder is alive
+
+    (stdlib 4.0.1) gen.erl:256: :gen.do_call/4
+    (elixir 1.13.4) lib/gen_server.ex:1027: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/path_finder.ex:22: Duper.PathFinder.handle_call/3
+    (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+    (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+
+16:43:30.823 [error] GenServer #PID<0.229.0> terminating
+** (stop) exited in: GenServer.call(PathFinder, :next_path, 5000)
+    ** (EXIT) an exception was raised:
+        ** (File.Error) could not read file stats "~": no such file or directory
+            (dir_walker 0.0.8) lib/dir_walker.ex:135: DirWalker.first_n/4
+            (dir_walker 0.0.8) lib/dir_walker.ex:88: DirWalker.handle_call/3
+            (stdlib 4.0.1) gen_server.erl:1146: :gen_server.try_handle_call/4
+            (stdlib 4.0.1) gen_server.erl:1175: :gen_server.handle_msg/6
+            (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+    (elixir 1.13.4) lib/gen_server.ex:1030: GenServer.call/3
+    (duuuper 0.1.0) lib/duper/worker.ex:14: Duper.Worker.handle_info/2
+    (stdlib 4.0.1) gen_server.erl:1120: :gen_server.try_dispatch/4
+    (stdlib 4.0.1) gen_server.erl:1197: :gen_server.handle_msg/6
+    (stdlib 4.0.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Last message: :do_one_file
+State: nil
+
+16:43:30.824 [notice] Application duuuper exited: shutdown
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution

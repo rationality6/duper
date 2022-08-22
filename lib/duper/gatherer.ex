@@ -8,6 +8,7 @@ defmodule Duper.Gatherer do
     GenServer.start_link(__MODULE__, worker_count, name: @me)
   end
 
+  @spec done :: :ok
   def done() do
     GenServer.cast(@me, :done)
   end
@@ -19,7 +20,15 @@ defmodule Duper.Gatherer do
   # server
 
   def init(worker_count) do
+    Process.send_after(self(), :kickoff, 0)
     {:ok, worker_count}
+  end
+
+  def handle_info(:kickoff, worker_count) do
+    1..worker_count
+    |> Enum.each(fn _ -> Duper.WorkerSupervisor.add_worker() end)
+
+    {:noreply, worker_count}
   end
 
   def handle_cast(:done, _worker_count = 1) do
@@ -32,7 +41,7 @@ defmodule Duper.Gatherer do
   end
 
   def handle_cast({:result, path, hash}, worker_count) do
-    Duper.Result.add_hash_for(path, hash)
+    Duper.Results.add_hash_for(path, hash)
     {:noreply, worker_count}
   end
 
